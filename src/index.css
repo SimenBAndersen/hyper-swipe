@@ -2,6 +2,7 @@
   display: flex;
   height: 400px;
   justify-content: space-around;
+  margin-top: 93px;
 }
 
 .DISLIKE {
@@ -13,6 +14,7 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: 0.8px;
+  margin: 50% auto;
   text-align: center;
   -webkit-background-clip: text;
   background-clip: text;
@@ -102,4 +104,5 @@
   border-width: 1px;
   border-image-source: linear-gradient(143deg, #c44aff, #9224ff);
   border-image-slice: 1;
+  margin-top: 70px;
 }
