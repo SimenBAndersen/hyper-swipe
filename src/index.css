@@ -5,6 +5,39 @@
   margin-top: 93px;
 }
 
+.Card-Text {
+  height: 72px;
+  font-family: Nunito;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  margin-bottom: 48px;
+  text-align: center;
+  color: #0f0124;
+}
+
+.Card-Text-Wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.Card-Title {
+  height: 38px;
+  font-family: Nunito;
+  font-size: 28px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  margin: 30px 20px 12px 20px;
+  text-align: center;
+  color: #0f0124;
+}
+
 .DISLIKE {
   background-image: linear-gradient(94deg, #10b3fe, #1ce6fa);
   font-family: Nunito;
@@ -105,4 +138,9 @@
   border-image-source: linear-gradient(143deg, #c44aff, #9224ff);
   border-image-slice: 1;
   margin-top: 70px;
+}
+
+.Image_1 {
+  width: 300px;
+  height: 200px;
 }
