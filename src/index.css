@@ -1,5 +1,105 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+.Card-Flex {
+  display: flex;
+  height: 400px;
+  justify-content: space-around;
+}
+
+.DISLIKE {
+  background-image: linear-gradient(94deg, #10b3fe, #1ce6fa);
+  font-family: Nunito;
+  font-size: 36px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-align: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 22px 44px rgba(0, 0, 0, 0.5);
+}
+
+.DISLIKE .text-style-1 {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(94deg, #10b3fe, #1ce6fa);
+}
+
+.Heading {
+  margin: 0 0 10px 0;
+  background-image: linear-gradient(92deg, #bd7bff, #3232fe);
+  font-family: 'Nunito';
+  font-size: 48px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.Heading .text-style-1 {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(92deg, #bd7bff, #3232fe);
+}
+
+.Heading-2 {
+  margin: 100px 0 10px 0;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 10px;
+  text-align: center;
+  color: #00ffff;
+  text-shadow: 0 22px 44px rgba(0, 0, 0, 0.5);
+}
+
+.Hyper-Swipe {
+  background-color: #0f0124;
+}
+
+.Introtext {
+  font-family: 'Nunito';
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #00ffff;
+}
+
+.Like {
+
+}
+
+.Mask {
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  background-color: #00ffff;
+  box-shadow: 0 22px 44px 0 #000000;
+}
+
+.Mask-Copy-2 {
+  width: 195px;
+  height: 260px;
+  border-radius: 10px;
+  box-shadow: 0 15px 29px 0 #000000;
+  border-style: solid;
+  border-width: 1px;
+  border-image-source: linear-gradient(143deg, #c44aff, #9224ff);
+  border-image-slice: 1;
 }
