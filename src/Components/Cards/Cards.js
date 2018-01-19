@@ -1,8 +1,6 @@
 import React from 'react';
 
 const Cards = (props) => {
-  console.log(props.cards[0]);
-
   return (
     <div className='Mask'>
       <img className='Image_1' src={props.cards[0].image} alt='' />
