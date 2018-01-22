@@ -1,15 +1,40 @@
-import React from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import ItemTypes from '../../ItemTypes';
+import { DragSource } from 'react-dnd';
 
-const Cards = (props) => {
-  return (
-    <div className='Mask'>
-      <img className='Image_1' src={props.cards[0].image} alt='' />
-      <h2 className='Card-Title'>{props.cards[0].title}</h2>
-      <div className='Card-Text-Wrapper'>
-        <p className='Card-Text'>{props.cards[0].body}</p>
-      </div>
-    </div>
-  );
+const cardSource = {
+  beginDrag(props) {
+    return {};
+  }
 }
 
-export default Cards;
+function collect(connect, monitor) {
+  return {
+    connectDragSource: connect.dragSource(),
+    isDragging: monitor.isDragging()
+  }
+}
+
+
+class Cards extends Component {
+  render() {
+    const {connectDragSource, isDragging } = this.props;
+    return connectDragSource(
+      <div className='Mask'>
+        <img className='Image_1' src={this.props.cards[0].image} alt='' />
+        <h2 className='Card-Title'>{this.props.cards[0].title}</h2>
+        <div className='Card-Text-Wrapper'>
+          <p className='Card-Text'>{this.props.cards[0].body}</p>
+        </div>
+      </div>
+    );
+  }
+}
+
+Cards.propTypes = {
+  connectDragSource: PropTypes.func.isRequired,
+  isDragging: PropTypes.bool.isRequired,
+}
+
+export default DragSource(ItemTypes.CARD, cardSource, collect)(Cards);
