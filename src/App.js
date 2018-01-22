@@ -4,6 +4,7 @@ import HTML5Backend from 'react-dnd-html5-backend';
 import Header from './Components/Header/Header';
 import Box from './Components/Box/Box';
 import Cards from './Components/Cards/Cards';
+import BackgroundCards from './Components/Cards/BackgroundCards';
 import {cards} from './cards';
 import ItemTypes from './ItemTypes';
 
@@ -33,6 +34,7 @@ class App extends Component {
         <Header />
         <div className='Card-Flex'>
           <Box name={'Dislike'} onDrop={this.handleDrop} wasLiked={false}/>
+          <BackgroundCards cards={this.state.cards}/>
           <Cards cards={this.state.cards}/>
           <Box name={'Like'} onDrop={this.handleDrop} wasLiked={true}/>
         </div>

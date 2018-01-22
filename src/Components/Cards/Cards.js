@@ -20,8 +20,11 @@ function collect(connect, monitor) {
 class Cards extends Component {
   render() {
     const {connectDragSource, isDragging } = this.props;
+
+    if (isDragging) return null;
+
     return connectDragSource(
-      <div className='Mask'>
+      <div className='Card-Number_1 Mask'>
         {(this.props.cards[0])
           ? <div>
               <img className='Image_1' src={this.props.cards[0].image} alt='' />
