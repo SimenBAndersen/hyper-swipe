@@ -5,7 +5,7 @@ import { DropTarget } from 'react-dnd';
 
 const boxTarget = {
 	drop(props, monitor) {
-		props.onDrop(monitor.getItem())
+		props.onDrop(monitor.getItem(), props.wasLiked)
 	},
 }
 

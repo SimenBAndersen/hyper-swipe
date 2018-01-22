@@ -16,8 +16,15 @@ class App extends Component {
       }
   }
 
-  handleDrop() {
-    console.log('was dropped..');
+  handleDrop = (monitor, wasLiked) => {
+    let newCards = this.state.cards;
+    let recentCard = this.state.cards[0];
+    recentCard.wasLiked = wasLiked;
+
+    localStorage.setItem(recentCard.title, JSON.stringify(recentCard));
+
+    newCards.splice(0, 1);
+    this.setState({cards: newCards});
   }
 
   render() {
@@ -25,9 +32,9 @@ class App extends Component {
       <div>
         <Header />
         <div className='Card-Flex'>
-          <Box name={'Dislike'} onDrop={this.handleDrop}/>
+          <Box name={'Dislike'} onDrop={this.handleDrop} wasLiked={false}/>
           <Cards cards={this.state.cards}/>
-          <Box name={'Like'} onDrop={this.handleDrop}/>
+          <Box name={'Like'} onDrop={this.handleDrop} wasLiked={true}/>
         </div>
       </div>
     );
