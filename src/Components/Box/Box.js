@@ -12,13 +12,12 @@ const boxTarget = {
 function collect(connect, monitor) {
   return {
     connectDropTarget: connect.dropTarget(),
-    isOver: monitor.isOver()
   };
 }
 
 class Box extends Component {
   render() {
-    const { connectDropTarget, isOver } = this.props;
+    const { connectDropTarget } = this.props;
 
     return connectDropTarget(
       <div className='Mask-Copy-2'>
@@ -30,7 +29,6 @@ class Box extends Component {
 
 Box.propTypes = {
   connectDropTarget: PropTypes.func.isRequired,
-  isOver: PropTypes.bool.isRequired
 };
 
 export default DropTarget(ItemTypes.CARD, boxTarget, collect)(Box);

@@ -6,7 +6,6 @@ import Box from './Components/Box/Box';
 import Cards from './Components/Cards/Cards';
 import BackgroundCards from './Components/Cards/BackgroundCards';
 import {cards} from './cards';
-import ItemTypes from './ItemTypes';
 
 class App extends Component {
   constructor() {
