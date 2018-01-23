@@ -1,5 +1,6 @@
 # hyper-swipe
-Like/Dislike drag and drop SPA made using React
+Drag and drop Single Page Application made using React
+- Cards are dragged/swiped into a box of either "like" or "dislike"
 - Data about the cards and whether it was "liked" or "disliked" is stored in local storage
 
 Using the following solutions/technology:
