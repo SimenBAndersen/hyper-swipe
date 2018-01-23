@@ -5,7 +5,7 @@ Drag and drop Single Page Application made using React
 
 Using the following solutions/technology:
 - React Drag and Drop(https://react-dnd.github.io/react-dnd/) higher order components to drag and drop cards into boxes of "like" and "dislike". 
-- https://hyper-swipe.herokuapp.com/cards for cards-data (I copied the data into a separate/local file due to some errors when retrieving the data from its original place)
+- https://hyper-swipe.herokuapp.com/cards for cards-data (I copied the data into a separate/local file due to some errors when retrieving the data from its original location)
 - Create-react-app
 
 Styling:
