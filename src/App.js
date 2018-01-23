@@ -18,14 +18,16 @@ class App extends Component {
   }
 
   handleDrop = (monitor, wasLiked) => {
-    let newCards = this.state.cards;
-    let recentCard = this.state.cards[0];
-    recentCard.wasLiked = wasLiked;
+    if (this.state.cards[0]) {
+      let newCards = this.state.cards;
+      let recentCard = this.state.cards[0];
+      recentCard.wasLiked = wasLiked;
 
-    localStorage.setItem(recentCard.title, JSON.stringify(recentCard));
+      localStorage.setItem(recentCard.title, JSON.stringify(recentCard));
 
-    newCards.splice(0, 1);
-    this.setState({cards: newCards});
+      newCards.splice(0, 1);
+      this.setState({cards: newCards});
+    }
   }
 
   render() {
